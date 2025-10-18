@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>K16THO0058-PHẠM TRƯỜNG THỐNG</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="web.css">
+    </head>
+    <body>
+        <--! Nút quay về đầu trang -->
+        <button id="backToTop" title="Lên đầu trang" style="display: block;">
+        </button>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {const btn =document.getElementById ("backToTop");}) 
+            //khi cuộn xuống > 200px thì hiện nút
+            window.addEventListener("scroll", function() { 
+                if (window.crolly > 200) {btn.style.display ="block";}
+                else{btn.style.display= "none";}
+            });
+
+            //khi click vào thì cuộn lên đầu
+            btn.addEventListener("click", function() {window.crolly({ top: 0, behavior: "smooth"});
+        });
+        </script>
+        <header>
+            <div class="tieude">
+                <img src="https://upt.edu.vn/wp-content/uploads/2020/05/logo-UPT-Z68x768.png" alt="logo">
+                <h1>K16THO0058-PHẠM TRƯỜNG THỐNG</h1>
+            </div>
+            <nav>
+                <a href="">Trang chủ</a>
+                <a href="">Giới thiệu</a>
+                <a href="https://www.facebook.com/truongthong.pham.79">Liên hệ</a>
+            </nav>
+        </header>
+    </header>
+
+   <h1>Top Cửa Hàng Thời Trang Tại Phan Thiết</h1>
+        <p>Khám phá những địa điểm mua sắm thời trang chất lượng tại Phan Thiết</p>
+    <section class="store-list">
+        <div class="store">
+            <h2>Fashion PT</h2>
+            <p>Phong cách trẻ trung, hiện đại, chuyên thời trang nam nữ.</p>
+            <a href="https://www.facebook.com/fashionpt" target="_blank">Xem chi tiết</a>
+        </div>
+
+        <div class="store">
+            <h2>FM Style Phan Thiết</h2>
+            <p>Thương hiệu nổi tiếng với phong cách trẻ, giá rẻ.</p>
+            <a href="https://www.facebook.com/FMStylePhanThiet" target="_blank">Xem chi tiết</a>
+        </div>
+
+        <div class="store">
+            <h2>YAME Phan Thiết</h2>
+            <p>Chuyên đồ local brand, phong cách cá tính, độc đáo.</p>
+            <a href="https://www.yame.vn" target="_blank">Xem chi tiết</a>
+        </div>
+
+        <div class="store">
+            <h2>Mono Concept Store</h2>
+            <p>Cửa hàng thời trang phong cách Hàn Quốc, tối giản và thanh lịch.</p>
+            <a href="https://www.facebook.com/monoconceptstore" target="_blank">Xem chi tiết</a>
+        </div>
+
+        <div class="store">
+            <h2>Style Men</h2>
+            <p>Chuyên thời trang nam: sơ mi, vest, áo thun cao cấp.</p>
+            <a href="https://goo.gl/maps/abcd1234" target="_blank">Xem trên Google Maps</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Danh Sách Cửa Hàng Thời Trang Phan Thiết</p>
+    </footer>
+    </body>
+</html>
